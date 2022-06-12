@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск</title>
+</head>
+<body>
+<h1>Найдено с навыком: {{ candidates|length }}</h1>
+{% for candidate in candidates %}
+<p><a href="/candidate/{{ candidate.skill }}">{{ candidate.name }}</a></p>
+{% endfor %}
+</body>
+</html>
